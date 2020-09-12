@@ -14,7 +14,7 @@ occluders = []
 # occluders.append(occluder.Occluder([[256,256],[256,300],[300,300]]))
 #occluders.append(occluder.Occluder([[156,156],[156,200],[200,200]]))
 DATA_DIR = os.path.join('data/')
-MUSIC_DIR = os.path.join(DATA_DIR+'music/')
+# MUSIC_DIR = os.path.join(DATA_DIR+'music/') there was music but it weighed too much
 IMG_DIR = os.path.join(DATA_DIR+'img/')
 FONTS_DIR = os.path.join(DATA_DIR+'fonts/')
 SAVE_DIR = os.path.join(DATA_DIR+'save/')
@@ -45,8 +45,8 @@ player = Player(100, 1, 15, 34)
 world.load_shadow(IMG_DIR+"light_falloff100.png", occluders)
 phis = Game(TARGET_FPS, PPM)
 
-pygame.mixer.music.load(MUSIC_DIR+'test.wav')
-pygame.mixer.music.play(-1)
+# pygame.mixer.music.load(MUSIC_DIR+'test.wav')
+# pygame.mixer.music.play(-1)
 
 def add_body(typ, pos, box, density=1, friction=0.3, mass=1):
   phis.add_body(typ, pos, box, density=density, friction=friction, mass=mass)
