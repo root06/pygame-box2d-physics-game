@@ -1,3 +1,5 @@
 Box2D==2.3.10
 multi-key-dict==2.0.3
+numpy==1.19.2
+opencv-python==4.4.0.42
 pygame==2.0.0.dev10
